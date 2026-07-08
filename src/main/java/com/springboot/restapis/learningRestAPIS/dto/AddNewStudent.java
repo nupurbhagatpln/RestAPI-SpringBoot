@@ -8,11 +8,11 @@ import lombok.Data;
 @Data
 public class AddNewStudent {
 
-    @Email
-    @NotBlank(message = "Please enter Email")
-    private String email;
-
     @NotBlank(message = "Please enter Name")
     @Size(min = 3, max=32, message = "Name should be between 3 to 32 characters")
     private String name;
+    
+    @Email
+    @NotBlank(message = "Please enter Email")
+    private String email;
 }
