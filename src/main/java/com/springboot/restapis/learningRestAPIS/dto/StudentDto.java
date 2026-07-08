@@ -10,7 +10,8 @@ import lombok.NoArgsConstructor;
 public class StudentDto {
     private long id;
 
-    private String email;
+   
     private String name;
+    private String email;
 // @data - helps me to create all the constructor getter, setter, hashcode for this class -by lombok
 }
